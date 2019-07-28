@@ -233,7 +233,7 @@ p {
 
 .section-heading > h2 {
     font-weight: 300;
-    color: #5b32b4;
+    color: #66d6c5;
     font-size: 48px;
     margin: 0;
 }
@@ -398,7 +398,7 @@ p {
 /* stcicky css */
 
 .header_area.sticky {
-    background-color: #884bdf;
+    background-color: darkcyan;
     -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     height: 70px;
@@ -427,7 +427,7 @@ p {
     background-image: url(img/bg-img/arunachala.webp);
     height: 900px;
     position: relative;
-    background-size: 100% 100%;
+    background-size: cover;
     
    
 }
@@ -465,7 +465,7 @@ p {
 }
 
 .get-start-area .email {
-    background: #9572e8;
+    background: darkcyan;
     height: 50px;
     max-width: 260px;
     border: none;
@@ -921,7 +921,7 @@ p {
 -------------------------- */
 
 .clients-feedback-area .client-name > h5 {
-    color: #5b32b4;
+    color: lightseagreen;
     font-size: 22px;
     margin-top: 5px;
 }
@@ -940,7 +940,7 @@ p {
 
 .clients-feedback-area .client > i {
     font-size: 48px;
-    color: #897ceb;
+    color: lightseagreen;
     margin-bottom: 30px;
 }
 
@@ -1170,7 +1170,7 @@ p {
 .address-text > p > span,
 .phone-text > p > span,
 .email-text > p > span {
-    color: #5b32b4;
+    color: darkturquoise;
 }
 
 .footer-contact-area .line-shape {

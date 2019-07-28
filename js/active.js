@@ -66,6 +66,7 @@
             slide: 'div',
             autoplay: true,
             centerMode: true,
+            autoplaySpeed: 4000,
             centerPadding: '30px',
             mobileFirst: true,
             prevArrow: '<i class="fa fa-angle-left"></i>',
@@ -128,7 +129,10 @@
     if ($window.width() > 767) {
         new WOW().init();
     }
-
+    
+    
+   var t=$("p.minimize");
+   t.each(function(){var t=$(this).text();t.length<300||$(this).html(t.slice(0,300)+'<span>... </span><a href="#" class="more">More</a><span style="display:none;">'+t.slice(300,t.length)+' <a href="#" class="less">Less</a></span>')});
     // :: 8.0 Sticky Active Code
     $window.on('scroll', function () {
         if ($window.scrollTop() > 48) {
@@ -137,6 +141,9 @@
             $('.header_area').removeClass('sticky slideInDown');
         }
     });
+    
+    
+    $("a.more",t).click(function(t){t.preventDefault(),$(this).hide().prev().hide(),$(this).next().show()}),$("a.less",t).click(function(t){t.preventDefault(),$(this).parent().hide().prev().show().prev().show()});
 
     // :: 9.0 Preloader Active code
     $window.on('load', function () {
